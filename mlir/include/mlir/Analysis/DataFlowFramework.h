@@ -146,7 +146,7 @@ private:
   Operation *op = nullptr;
 };
 
-inline raw_ostream &operator<<(raw_ostream &os, ProgramPoint point) {
+inline raw_ostream &operator<<(raw_ostream &os, const ProgramPoint &point) {
   point.print(os);
   return os;
 }
